@@ -1,7 +1,9 @@
+updated branch "main"
+
 # Running the Application with Docker
 
 - docker compose build
-- docker compose up 
+- docker compose up
 
 # Gateway api route
 
