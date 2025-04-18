@@ -13,7 +13,7 @@ import org.slf4j.LoggerFactory;
 public class ProductServiceImpl implements ProductService {
     
     private static final Logger logger = LoggerFactory.getLogger(ProductServiceImpl.class);
-    private static final String API_BASE_URL = "http://localhost:3000/api/products/";
+    private static final String API_BASE_URL = "http://gateway-api:3000/api/product/products/";
     
     private final RestTemplate restTemplate;
     
