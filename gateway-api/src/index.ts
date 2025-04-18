@@ -6,13 +6,13 @@ const PORT = process.env.PORT || 3000;
 
 // Exemple de proxy vers un microservice utilisateur
 app.use('/api/order', createProxyMiddleware({
-  target: 'http://order-service:8081',
+  target: 'http://order-service:8082',
   changeOrigin: true,
 }));
 
 // Exemple de proxy vers un microservice produit
-app.use('/api/products', createProxyMiddleware({
-  target: 'http://product-service:8082',
+app.use('/api/product', createProxyMiddleware({
+  target: 'http://product-service:8081',
   changeOrigin: true,
 }));
 
