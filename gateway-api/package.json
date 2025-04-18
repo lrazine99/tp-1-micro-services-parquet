@@ -6,8 +6,7 @@
   "scripts": {
     "start": "NODE_PATH=./build node build/index.js",
     "build": "tsc -p .",
-    "dev": "nodemon --watch \"./src/**\" --ext ts,js,json --exec \"ts-node ./src/index.ts\"",
-    "test": "NODE_ENV=test jest --detectOpenHandles"
+    "dev": "nodemon src/index.ts"
   },
   "keywords": [],
   "author": "",
@@ -16,13 +15,14 @@
   "devDependencies": {
     "@types/express": "^5.0.1",
     "@types/node": "^22.14.1",
+    "nodemon": "^3.1.9",
     "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.8.3"
   },
   "dependencies": {
     "@types/nodemon": "^1.19.6",
     "express": "^5.1.0",
-    "http-proxy-middleware": "^3.0.5",
-    "nodemon": "^3.1.9"
+    "http-proxy-middleware": "^3.0.5"
   }
 }

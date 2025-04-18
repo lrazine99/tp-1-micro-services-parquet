@@ -2,9 +2,11 @@ services:
   gateway-api:
     build:
       context: ./gateway-api
+      target: ${DOCKER_ENV:-dev}
     working_dir: /app
     volumes:
       - ./gateway-api:/app
+      - /app/node_modules  
     ports:
       - "3000:3000"
   product-service:
