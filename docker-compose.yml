@@ -10,16 +10,10 @@ services:
   product-service:
     build:
       context: ./services/product
-    working_dir: /app
-    volumes:
-      - ./product-service:/app
     ports:
       - "8081:8081"
   order-service:
     build:
       context: ./services/order
-    working_dir: /app
-    volumes:
-      - ./order-service:/app
     ports:
       - "8082:8082"
