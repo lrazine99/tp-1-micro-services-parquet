@@ -9,7 +9,7 @@ services:
       - "3000:3000"
   product-service:
     build:
-      context: ./product-service
+      context: ./services/product
     working_dir: /app
     volumes:
       - ./product-service:/app
@@ -17,7 +17,7 @@ services:
       - "8081:8081"
   order-service:
     build:
-      context: ./order-service
+      context: ./services/order
     working_dir: /app
     volumes:
       - ./order-service:/app
