@@ -1,0 +1,28 @@
+{
+  "name": "gateway-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_PATH=./build node build/index.js",
+    "build": "tsc -p .",
+    "dev": "nodemon --watch \"./src/**\" --ext ts,js,json --exec \"ts-node ./src/index.ts\"",
+    "test": "NODE_ENV=test jest --detectOpenHandles"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.14.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@types/nodemon": "^1.19.6",
+    "express": "^5.1.0",
+    "http-proxy-middleware": "^3.0.5",
+    "nodemon": "^3.1.9"
+  }
+}

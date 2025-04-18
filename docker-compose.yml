@@ -1,0 +1,9 @@
+services:
+  gateway-api:
+    build:
+      context: ./gateway-api
+    working_dir: /app
+    volumes:
+      - ./gateway-api:/app
+    ports:
+      - "3000:3000"
